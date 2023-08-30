@@ -1,7 +1,14 @@
 import { StyleSheet, Text, View,Image } from 'react-native';
 import { Avatar } from 'react-native-paper';
+import {useFonts} from "expo-font"
 
 export default function MainNews() {
+    const [loaded] = useFonts({
+        NatoSerif: require('../assets/fonts/NotoSerif_Condensed-Bold.ttf'),
+        reguler : require('../assets/fonts/NotoSerif_Condensed-Black.ttf'),
+      });
+
+        if (!loaded) { return null; }
 
     return (
         <View style={{display: 'flex' , flexDirection: 'column'}}>
@@ -41,7 +48,7 @@ const styles = StyleSheet.create({
     },
     shadowText: {
         textShadowColor: 'rgba(0, 0, 0, 0.25)',
-        textShadowOffset: {width: 1, height: 2},
+        textShadowOffset: {width: 0, height: 4},
         textShadowRadius: 4,
         fontSize: 35,
         left: 24,
@@ -49,17 +56,16 @@ const styles = StyleSheet.create({
         marginTop: 19,
         lineHeight: 36,
         fontWeight: '700',
+        fontFamily: 'NatoSerif',
     },
     shadowInfo:{
         textShadowColor: 'rgba(0, 0, 0, 0.25)',
-        textShadowOffset: {width: 6, height: 2},
         textShadowRadius: 4,
         fontSize: 16,
         left: 24,
-        marginRight: 100,
         marginTop: 19,
         lineHeight: 24,
-        fontWeight: "900",
-        marginRight: 140,
+        marginRight: 130,
+        fontFamily: 'reguler'
     },
 });
