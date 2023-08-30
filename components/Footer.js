@@ -4,7 +4,8 @@ const listFooter = [
     "About HİTATEK",
     "Jobs",
     "Press Releases",
-    "Documentary Submission",
+    "Documentary",
+    "Submission",
     "Contact Us"
 ]
 
