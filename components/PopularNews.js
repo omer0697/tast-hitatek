@@ -4,7 +4,7 @@ import { popularDarta } from '../data/mockData';
 export default function PopularNews() {
     const styles = StyleSheet.create({
         text: {
-            fontFamily: 'a', // The name here should match the font's file name
+            fontFamily: 'Barlow', // The name here should match the font's file name
             fontSize: 24,
             paddingBottom: 16,
             fontWeight:"400",
