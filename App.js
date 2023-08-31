@@ -13,6 +13,16 @@ import Footer from './components/Footer';
 
 export default function App() {
 
+  const steyles = StyleSheet.create({
+    line: {
+      borderBottomColor: 'black',
+      borderBottomWidth: 1,
+      marginTop: 10,
+      left: 24,
+      marginRight: 50,
+    },
+  });
+
   return (
     <PaperProvider>
       <Appbar />
@@ -21,35 +31,11 @@ export default function App() {
         <StatusBar style="auto" />
         <MainNews />
         <News />
-        <View 
-            style={{
-                borderBottomColor: 'black',
-                borderBottomWidth: 1,
-                marginTop: 10,
-                left: 24,
-                marginRight: 50,
-            }}
-        />
+        <View style={steyles.line} />
         <PopularNews />
-        <View 
-            style={{
-                borderBottomColor: 'black',
-                borderBottomWidth: 1,
-                marginTop: 10,
-                left: 24,
-                marginRight: 50,
-            }}
-        />
+        <View style={steyles.line} />
         <Card />
-        <View 
-            style={{
-                borderBottomColor: 'black',
-                borderBottomWidth: 1,
-                marginTop: 20,
-                left: 24,
-                marginRight: 50,
-            }}
-        />
+        <View style={steyles.line} />
       <LatestNews />
       <Footer />
       </ScrollView>
