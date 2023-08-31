@@ -40,7 +40,5 @@ export default function App() {
       <Footer />
       </ScrollView>
     </PaperProvider>
-
-    
   );
 }
